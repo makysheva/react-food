@@ -1,0 +1,91 @@
+.card {
+  content: '';
+  background: url('../../assets/images/card-img.png') no-repeat;
+  background-size: cover;
+  max-width: 320px;
+  width: 100%;
+  height: 480px;
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 50px;
+  cursor: pointer;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  max-width: 320px;
+  width: 100%;
+  height: 480px;
+}
+
+.cardContent {
+  max-width: 208px;
+  width: 100%;
+}
+
+.slogan {
+  font-size: 16px;
+  font-weight: normal;
+  color: #666;
+  padding: 25px 0 10px;
+}
+
+.name {
+  font-size: 48px;
+  font-weight: bold;
+  color: #000;
+  padding-bottom: 3px;
+}
+
+.productView {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  padding-bottom: 19px;
+}
+
+.portionCount {
+  font-size: 16px;
+  font-weight: bold;
+  color: #666;
+}
+
+.portion {
+  font-size: 16px;
+  font-weight: normal;
+  color: #666;
+}
+
+.packing {
+  position: absolute;
+  right: 17px;
+  bottom: 17px;
+  content: '';
+  background-color: #d91667;
+  color: #fff;
+  font-size: 32px;
+  font-weight: normal;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  line-height: 34px;
+  display: flex;
+  flex-direction: column;
+}
+
+.proposal {
+  font-size: 13px;
+  font-weight: normal;
+  color: #fff;
+  text-align: center;
+}
+
+.buy {
+  color: #1698d9;
+  border-bottom: 1px dashed #1698d9;
+  cursor: pointer;
+}
