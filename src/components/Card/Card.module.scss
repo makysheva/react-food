@@ -1,14 +1,40 @@
 .card {
-  content: '';
-  background: url('../../assets/images/card-img.png') no-repeat;
-  background-size: cover;
-  max-width: 320px;
-  width: 100%;
-  height: 480px;
-  position: relative;
-  margin-bottom: 10px;
-  padding-left: 50px;
   cursor: pointer;
+  border-radius: 14px;
+  border: 4px solid #1698d9;
+  background-color: #f2f2f2;
+  height: 480px;
+  transition: border 0.5s;
+  -webkit-clip-path: polygon(13.9% 0, 100% 0, 100% 100%, 0 100%, 0 9.3%);
+  clip-path: polygon(13.9% 0, 100% 0, 100% 100%, 0 100%, 0 9.3%);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 15px;
+  padding-top: 24px;
+  position: relative;
+}
+
+.card::before {
+  content: '';
+  width: 70px;
+  height: 5px;
+  background-color: #1698d9;
+  transition: background-color 0.5s;
+  transform: rotate(136.6deg);
+  position: absolute;
+  left: -16px;
+  top: 16px;
+}
+
+.cardDisabled {
+  border-color: #b3b3b3;
+  transition: border 0s;
+}
+
+.cardDisabled.card::before {
+  background-color: #b3b3b3;
+  transition: background-color 0s;
 }
 
 .box {
@@ -24,6 +50,7 @@
 .cardContent {
   max-width: 208px;
   width: 100%;
+  padding-left: 50px;
 }
 
 .slogan {
@@ -64,7 +91,7 @@
   right: 17px;
   bottom: 17px;
   content: '';
-  background-color: #d91667;
+  background-color: #1698d9;
   color: #fff;
   font-size: 32px;
   font-weight: normal;
@@ -82,10 +109,45 @@
   font-weight: normal;
   color: #fff;
   text-align: center;
+  cursor: pointer;
 }
 
 .buy {
   color: #1698d9;
   border-bottom: 1px dashed #1698d9;
   cursor: pointer;
+}
+
+.cardDisabled .name,
+.cardDisabled .slogan,
+.cardDisabled .productView,
+.cardDisabled .portionCount,
+.cardDisabled .portion,
+.cardDisabled .gift,
+.cardDisabled .isSatisfied {
+  color: #b3b3b3;
+}
+
+.cardDisabled .packing {
+  background-color: #b3b3b3;
+}
+
+.cardDisabled .catImg {
+  opacity: 0.5;
+}
+
+.cardDisabled .card {
+  cursor: not-allowed;
+}
+
+.cardSelected .card {
+  border-color: #d91667;
+}
+
+.cardSelected .card::before {
+  border-color: #d91667;
+}
+
+.cardSelected .packing {
+  background-color: #d91667 !important;
 }

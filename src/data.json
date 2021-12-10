@@ -1,0 +1,37 @@
+{
+    "cardList": [
+    {
+      "id": 1,
+      "slogan": "Сказочное заморское яство",
+      "name": "Нямушка",
+      "productView": "с фуа-гра",
+      "portionCount": "10",
+      "gift": "мышь в подарок",
+      "isSatisfied": false,
+      "isActive": true,
+      "packing": "0,5"
+    },
+    {
+        "id": 2,
+        "slogan": "Сказочное заморское яство",
+        "name": "Нямушка",
+        "productView": "с рыбой",
+        "portionCount": "40",
+        "gift": "2 мыши в подарок",
+        "isSatisfied": false,
+        "isActive": true,
+        "packing": "2"
+    },
+    {
+        "id": 3,
+        "slogan": "Сказочное заморское яство",
+        "name": "Нямушка",
+        "productView": "с курой",
+        "portionCount": "100",
+        "gift": "5 мышей в подарок",
+        "isSatisfied": true,
+        "isActive": false,
+        "packing": "5"
+    }
+  ]
+}
